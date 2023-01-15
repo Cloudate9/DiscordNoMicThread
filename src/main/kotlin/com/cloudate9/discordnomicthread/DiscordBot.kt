@@ -1,6 +1,6 @@
-package com.cloudate9.discordvctts
+package com.cloudate9.discordnomicthread
 
-import com.cloudate9.discordvctts.data.Config
+import com.cloudate9.discordnomicthread.data.Config
 import dev.kord.common.entity.Snowflake
 import dev.kord.core.Kord
 import dev.kord.core.behavior.channel.asChannelOf
@@ -28,7 +28,7 @@ private val channelMap = mutableMapOf<VcId, Pair<NoMicChannel, NoMicThread>>()
 
 suspend fun main() = runBlocking {
 
-    val configFile = File("DiscordVcTTSConfig.json")
+    val configFile = File("DiscordNoMicThreadConfig.json")
     val config: Config = if (configFile.exists()) {
         logger.info { "Config file found at ${configFile.absolutePath}" }
         Json.decodeFromString(configFile.readText())

@@ -1,4 +1,4 @@
-package com.cloudate9.discordvctts.data
+package com.cloudate9.discordnomicthread.data
 
 import kotlinx.serialization.Serializable
 
